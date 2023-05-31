@@ -18,7 +18,7 @@ app.use("/faculty",facultyrouter);
 
 
 // Database connection
-mongoose.connect("mongodb+srv://finalyear:finalyear@cluster0.jc1rrup.mongodb.net/", {
+mongoose.connect(process.env.connectionUrl, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
